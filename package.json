@@ -1,0 +1,18 @@
+{
+  "name": "optilens-compare-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OptiLens Compare Monorepo",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @optilens/backend\" \"npm run dev -w @optilens/frontend\"",
+    "build": "npm run build -w @optilens/common && npm run build -w @optilens/db && npm run build -w @optilens/backend && npm run build -w @optilens/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  }
+}

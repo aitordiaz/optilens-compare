@@ -89,3 +89,10 @@ web_modules/
 *.env
 *.pem
 *.key
+
+# --- Monorepo Specific Ignores ------------------------------------------------
+dist/
+build/
+.env.local
+.env.*.local
+
