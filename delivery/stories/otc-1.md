@@ -1,7 +1,7 @@
 # Story: OTC-1 - Establish TS Monorepo Skeleton
 
 ## Metadata
-- **Status**: Approved for Dev
+- **Status**: Closed
 - **Epic**: [N/A]
 - **Target Repositories**: monorepo
 - **Target Product**: optilens-compare
@@ -62,4 +62,4 @@ So that the development team has a unified structure, shared packages, database 
 ## 4. Delivery Assets
 - **Development Plan**: [development-plan-otc-1.md](file:///home/aitor/projects/optilens-compare/delivery/stories/development-plan-otc-1.md)
 - **QA Report**: [qa-report-otc-1.md](file:///home/aitor/projects/optilens-compare/delivery/stories/qa-report-otc-1.md)
-- **Merge Request URL**: [Pending]
+- **Merge Request URL**: Local Workspace Merge (Branch `feature/story-otc-1`)
