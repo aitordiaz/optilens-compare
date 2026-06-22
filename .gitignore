@@ -1,0 +1,91 @@
+# =============================================================================
+# Cerebrum.md Git Ignore Configuration
+# =============================================================================
+# This file prevents local outputs of initialize.sh and other system-specific
+# files from being committed to the harness repository.
+# Reference: User Request (ad1090b7-ff6d-45a2-bb3f-ad8a73c38c4a)
+# =============================================================================
+
+# --- Cerebrum Provider Initialization Outputs ---------------------------------
+# Prevents committing provider configurations generated locally via scripts/initialize.sh
+.agents/
+.claude/
+.cursor/
+CLAUDE.md
+.cerebrum-init.md
+
+# --- OS-Specific Files --------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon\r
+._*
+.Spotlight-V100
+.Trashes
+Brushish
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# --- IDEs and Editors ---------------------------------------------------------
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# IntelliJ / WebStorm / PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.#*
+.recommenders/
+
+# --- Logs, Temporary Files and Caches -----------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.eslintcache
+.cache/
+.parcel-cache
+.temp/
+tmp/
+temp/
+
+# --- Node / Frontend Packages (Best Practice) ----------------------------------
+node_modules/
+jspm_packages/
+web_modules/
+
+# --- Environment and Secrets (Best Practice) -----------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
